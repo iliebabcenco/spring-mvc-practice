@@ -1,0 +1,13 @@
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Hello</title>
+</head>
+<body>
+    <h3>Hello world of Spring!</h3>
+
+    <p>Student name ${param.studentName}</p>
+    <p>Message: ${message}</p>
+</body>
+</html>
