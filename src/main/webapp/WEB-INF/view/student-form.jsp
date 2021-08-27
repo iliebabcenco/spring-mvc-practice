@@ -19,6 +19,19 @@
             <form:options items="${student.countryOptions}"/>
         </form:select>
         <br>
+        Favorite Language:
+        Java <form:radiobutton path="favoriteLanguage" value="Java"/>
+        C# <form:radiobutton path="favoriteLanguage" value="C#"/>
+        Ruby <form:radiobutton path="favoriteLanguage" value="Ruby"/>
+        JavaScript <form:radiobutton path="favoriteLanguage" value="JavaScript"/>
+
+        <br>
+
+        Country:
+        <form:select path="countryFromEnum">
+            <form:options items="${student.countryFromEnum.name()}"/>
+        </form:select>
+        <br>
         <input type="submit" value="Submit" />
 
     </form:form>

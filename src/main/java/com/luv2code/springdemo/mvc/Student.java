@@ -8,6 +8,16 @@ public class Student {
     private String lastname;
     private String country;
     private LinkedHashMap<String, String> countryOptions;
+    private String favoriteLanguage;
+    private CountriesEnum countryFromEnum;
+
+    public CountriesEnum getCountryFromEnum() {
+        return countryFromEnum;
+    }
+
+    public void setCountryFromEnum(CountriesEnum countryFromEnum) {
+        this.countryFromEnum = countryFromEnum;
+    }
 
     public Student() {
 
@@ -52,5 +62,13 @@ public class Student {
 
     public LinkedHashMap<String, String> getCountryOptions() {
         return countryOptions;
+    }
+
+    public String getFavoriteLanguage() {
+        return favoriteLanguage;
+    }
+
+    public void setFavoriteLanguage(String favoriteLanguage) {
+        this.favoriteLanguage = favoriteLanguage;
     }
 }
