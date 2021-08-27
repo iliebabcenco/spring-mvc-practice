@@ -7,11 +7,18 @@
 </head>
 <body>
     <form:form action="processForm" modelAttribute="student">
+        <br>
 
         First name: <form:input path="firstName"/>
+        <br>
 
         Last name: <form:input path="lastname"/>
-
+        <br>
+            Country:
+        <form:select path="country">
+            <form:options items="${student.countryOptions}"/>
+        </form:select>
+        <br>
         <input type="submit" value="Submit" />
 
     </form:form>
