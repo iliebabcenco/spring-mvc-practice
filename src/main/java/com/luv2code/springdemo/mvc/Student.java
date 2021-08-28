@@ -10,6 +10,9 @@ public class Student {
     private LinkedHashMap<String, String> countryOptions;
     private String favoriteLanguage;
     private CountriesEnum countryFromEnum;
+    private OperationSystemsEnum[] operationSystems;
+    private String[] operatingSystems;
+
 
     public CountriesEnum getCountryFromEnum() {
         return countryFromEnum;
@@ -70,5 +73,21 @@ public class Student {
 
     public void setFavoriteLanguage(String favoriteLanguage) {
         this.favoriteLanguage = favoriteLanguage;
+    }
+
+    public OperationSystemsEnum[] getOperationSystems() {
+        return operationSystems;
+    }
+
+    public void setOperationSystems(OperationSystemsEnum[] operationSystems) {
+        this.operationSystems = operationSystems;
+    }
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
     }
 }
