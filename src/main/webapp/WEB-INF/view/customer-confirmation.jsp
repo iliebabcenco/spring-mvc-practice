@@ -13,6 +13,8 @@
 
     <p>Free passes: ${customer.freePasses}</p>
     <p>Postal code: ${customer.postalCode}</p>
+    <p>Course code: ${customer.courseCode}</p>
+
     <a href="/">Go to the menu page</a>
 </body>
 </html>
